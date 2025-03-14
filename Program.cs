@@ -53,7 +53,8 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
             "http://localhost:4200", 
             "http://localhost:3000", 
-            "https://*.onrender.com/"
+            "https://*.onrender.com/",
+            "https://*.netlify.app/"
         )
         .AllowAnyMethod()
         .AllowAnyHeader()
