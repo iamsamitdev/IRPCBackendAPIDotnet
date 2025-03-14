@@ -56,6 +56,7 @@ builder.Services.AddCors(options =>
             "https://*.onrender.com/",
             "https://*.netlify.app/"
         )
+        .SetIsOriginAllowedToAllowWildcardSubdomains()
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials();
